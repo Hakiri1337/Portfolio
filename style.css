@@ -464,7 +464,7 @@ html.is-leaving .transition-fade {
   transform: rotateZ(180deg);
 }
 #projects-body {
-  overflow: auto;
+  overflow: visible;
 }
 
 @media screen and (max-width: 730px) {
