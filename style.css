@@ -461,3 +461,12 @@ html.is-leaving .transition-fade {
 #projects-body {
   overflow: auto;
 }
+
+@media screen and (max-width: 730px) {
+  .project-box {
+    margin-top: 100px;
+  }
+  .slider {
+    margin-top: 100px;
+  }
+}
