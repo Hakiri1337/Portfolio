@@ -496,6 +496,7 @@ input:-webkit-autofill {
   height: 10%;
   border: none;
   border-radius: 10px;
+  padding-left: 10px;
 }
 .message {
   background-color: #181931;
