@@ -7,13 +7,15 @@
   --container_width: 100%;
 }
 #projects-body {
-  overflow: visible;
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 #home-page {
   overflow: hidden;
 }
 body {
   background-color: #2f303a;
+  overflow-x: hidden;
 }
 nav {
   display: flex;
@@ -132,7 +134,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 92vh;
 }
 h1 {
   color: white;
@@ -392,29 +394,27 @@ html.is-leaving .transition-fade {
   flex-wrap: wrap;
 }
 .github-button {
-  width: 150px;
   height: 40px;
   top: 65%;
-  border-radius: 10px;
-  background-color: #2f304a;
+  text-transform: uppercase;
+  width: 170px;
+  border-color: #1d1e22;
+  height: 45px;
   color: white;
-  font-weight: bold;
+  background-color: #2f303a;
   border-color: #1d1e22;
   letter-spacing: 0.1em;
 }
 .page-button {
   margin-top: 10px;
-  letter-spacing: 0.1em;
   margin-left: 10px;
-  letter-spacing: 2px;
   text-transform: uppercase;
-  width: 200px;
+  width: 170px;
   border-color: #1d1e22;
-  height: 40px;
+  height: 45px;
   top: 75%;
-  font-family: "Lato", sans-serif;
+  font-family: "Robot", sans-serif;
   color: white;
-  font-weight: bold;
   background-color: #2f303a;
 }
 
