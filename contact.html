@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=0' >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Porftolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet"  href="style.css"> 
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script type="module" defer src="app.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body id="projects-body">
+    <nav>
+        <div class="logo">
+            <h4>The Nav</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/Contact.html">Contact</a></li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+   <main id="swup" class="transition-fade">
+     
+       <div class="container" id="contact-container">
+  
+    <form class="contact-form" action="https://formsubmit.co/kubawojewodzki46@gmail.com" method="POST">
+        <h3>Send an message to me</h3>
+        <input class="email" type="email" name="mail" placeholder="Email Adress" required>
+        <input class="title" type="text" name="Title" placeholder="Title">
+        <textarea class="message" placeholder="Type your message"></textarea>
+        <button class="send-button" type="submit">Send</button>
+    </form>
+    <div class="footer">
+        <div class="icon-container"> 
+            <a href="https://github.com/Hakiri1337" target="_blank">  
+          <img class="social-icon" src="/images/git-icon.svg" alt="My Github">
+        </a>
+       <div class="btn" data-clipboard-text="kubawojewodzki46@gmail.com">
+            <img  class="social-icon" src="/images/gmail-icon.svg" alt="Copy to clipboard">
+    </div>            
+        <a href="https://www.linkedin.com/in/jakub-wojewodzki-664884216/" target="_blank">  
+            <img class="social-icon" src="/images/linkedin-icon.svg" alt="My LinkedIn">
+        </a>      
+        </div>
+    </div>
+       </div>
+   </main>

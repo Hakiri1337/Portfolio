@@ -1,3 +1,8 @@
+
+
+
+
+
 const burger = document.querySelector(".burger")
 const nav = document.querySelector(".nav-links")
 
@@ -33,9 +38,13 @@ const navSlide = () => {
     })
     })})
 }
-navSlide();
-
-
-
+navSlide()
 
 const swup = new Swup()
+
+
+const clip = new ClipboardJS('.btn');
+
+clip.on("success", function () {
+    swal("Success","My Email has been copied to your clipboard","success");
+})
