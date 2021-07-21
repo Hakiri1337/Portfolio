@@ -516,7 +516,6 @@ input:-webkit-autofill {
 .send-button {
   color: white;
   font-size: 1rem;
-
   letter-spacing: 2px;
   font-family: Poppins, sans-serif;
   border: none;
@@ -584,5 +583,5 @@ input:-webkit-autofill {
 .projects-img {
   width: 100%;
   border-radius: 2%;
-  height: 99%;
+  height: 100%;
 }
