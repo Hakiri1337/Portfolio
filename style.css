@@ -339,13 +339,31 @@ html.is-leaving .transition-fade {
   width: 65%;
   height: 65%;
 }
-.about-me {
+.about-me:nth-child(1) {
   margin-top: 40px;
   margin-left: 20px;
   text-align: left;
   font-size: 1.1em;
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.about-me {
+  margin-left: 20px;
+  text-align: left;
+  font-size: 1.1em;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.about-me:nth-child(5) {
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 1.1em;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.skill-list a {
+  color: white;
 }
 @media screen and (max-width: 730px) {
   #laptop {
