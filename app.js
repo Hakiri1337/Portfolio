@@ -1,50 +1,46 @@
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav-links");
 
-
-
-
-
-const burger = document.querySelector(".burger")
-const nav = document.querySelector(".nav-links")
-
-const navLinks = document.querySelectorAll(".nav-links li")
-const navhref = document.querySelectorAll(".nav-links li a")
+const navLinks = document.querySelectorAll(".nav-links li");
+const navhref = document.querySelectorAll(".nav-links li a");
 const navSlide = () => {
-   
+  burger.addEventListener("click", (e) => {
+    nav.classList.toggle("nav-active");
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 4 + 0.2
+        }s`;
+      }
+    });
 
-    burger.addEventListener('click', (e)=>{    
-        
-        nav.classList.toggle('nav-active')
-        navLinks.forEach((link, index) =>{
-            if(link.style.animation){
-                  link.style.animation=''}
-            else{
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index/4+0.2}s`
-            }
-    })
-   
-    burger.classList.toggle('toggle')
- 
-    })
-  
-    navhref.forEach(a=>{a.addEventListener('click',()=>{
-        nav.classList.toggle('nav-active')
-        burger.classList.toggle('toggle')
-        navLinks.forEach((link, index) =>{
-            if(link.style.animation){
-                  link.style.animation=''}
-            else{
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index/4+0.8}s`
-            }
-    })
-    })})
-}
-navSlide()
+    burger.classList.toggle("toggle");
+  });
 
-const swup = new Swup()
+  navhref.forEach((a) => {
+    a.addEventListener("click", () => {
+      nav.classList.toggle("nav-active");
+      burger.classList.toggle("toggle");
+      navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+          link.style.animation = "";
+        } else {
+          link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 4 + 0.8
+          }s`;
+        }
+      });
+    });
+  });
+};
+navSlide();
 
+const swup = new Swup();
 
-const clip = new ClipboardJS('.btn');
+const clip = new ClipboardJS(".btn");
 
 clip.on("success", function () {
-    swal("Success","My Email has been copied to your clipboard","success");
-})
+  swal("Success", "My Email has been copied to your clipboard", "success");
+});
